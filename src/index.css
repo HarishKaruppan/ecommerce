@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  font-size: 16px;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Arial;
+}
+
+.App {
+  max-width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.rightitems {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.logout a {
+  text-decoration: none;
+
+  color: white;
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px;
+
+  background-color: #009688;
+
+  color: white;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+.cart-icon {
+  position: relative;
+
+  cursor: pointer;
+
+  font-size: 24px;
+}
+
+.notification {
+  position: absolute;
+
+  top: -5px;
+
+  right: -10px;
+
+  background-color: red;
+
+  color: white;
+
+  border-radius: 50%;
+
+  padding: 2px 6px;
+
+  font-size: 12px;
+}
+
+/* .card-container {
+  display: grid;
+
+  gap: 20px;
+
+  grid-template-columns: repeat(4, 1fr);
+} */
+
+.loggedout {
+  max-width: 300px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  margin: 20px auto;
+
+  padding: 10px;
+}
+
+.card {
+  border: 1px solid #ddd;
+
+  border-radius: 8px;
+
+  max-width: 300px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+
+  margin: 20px;
+  padding: 15px;
+
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+
+  aspect-ratio: 1/1;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+
+  margin: 0 0 10px;
+}
+
+.top {
+  font-size: 20px;
+}
+
+.bottom {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.card-description {
+  font-size: 0.9rem;
+
+  color: #555;
+
+  margin: 0 0 10px;
+}
+
+.card-price {
+  font-size: 1.1rem;
+
+  font-weight: bold;
+
+  margin: 0 0 10px;
+}
+
+.card-rating {
+  font-size: 0.9rem;
+
+  color: #777;
+}
+
+.login {
+  background-color: black; /* Bootstrap primary color */
+
+  color: white;
+
+  border: 1px solid burlywood;
+
+  border-radius: 5px;
+
+  padding: 10px 15px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition: background-color 0.3s ease;
+
+  margin-top: 10px; /* Space above the button */
+}
+
+.signup,
+.view-toggle button {
+  background-color: coral; /* Bootstrap primary color */
+
+  color: white;
+
+  border: 1px solid burlywood;
+
+  border-radius: 5px;
+
+  padding: 10px 15px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition: background-color 0.3s ease;
+
+  margin-top: 10px;
+}
+
+.cart {
+  background-color: #007bff; /* Bootstrap primary color */
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  padding: 10px 15px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  transition: background-color 0.3s ease;
+
+  margin-top: 10px; /* Space above the button */
+}
+
+.cart:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.checkout {
+  display: flex;
+
+  flex-direction: column;
+
+  max-width: 500px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid black;
+
+  margin: 30px auto;
+}
+
+.checkoutItems {
+  border: 1px solid #ccc;
+
+  padding: 8px;
+}
+
+.checkout h3 {
+  text-align: right;
+
+  margin-left: auto;
+
+  margin-right: 5px;
+}
+
+/* Login */
+
+.login-container {
+  max-width: 400px;
+
+  margin: 50px auto;
+
+  padding: 20px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.login-title {
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  width: 40%;
+
+  margin: 0 auto;
+
+  padding: 10px;
+
+  background-color: #007bff;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.form {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.username,
+.password {
+  display: flex;
+
+  gap: 10px;
+}
+
+.error {
+  color: red;
+}
+
+/* View Toggle Styles */
+.view-toggle {
+  display: flex;
+  margin: 10px auto;
+  max-width: 10%;
+  gap: 5px;
+}
+
+.view-toggle .active {
+  color: black;
+  background-color: cornflowerblue; /* Highlight active view */
+}
+
+/* Grid and List View Styles */
+.card-container.grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card-container.list-view .card {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-container.list-view .card img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.card-container.list-view .card {
+  max-width: 100%;
+}
